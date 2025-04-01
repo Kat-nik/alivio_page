@@ -1,0 +1,90 @@
+.about {
+  background-color: var(--co-white);
+  padding: 160px 0 60px;
+}
+/* .about__subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--co-light-black);
+  line-height: 157%;
+} */
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__title {
+  max-width: 500px;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--co-light-green);
+  line-height: 157%;
+  position: relative;
+}
+
+.about__title::before {   /* два способа внести или через Н3 или через буфор, важно через заголовок если должен быть прочитан, если нетБ то так не придется писать лишних стилей для адаптива */
+  content: "How it works";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--co-light-black);
+}
+
+.about__desc {
+  max-width: 670px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--co-light-black);
+  line-height: 150%;
+}
+
+.about__cards {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.about__cards .card:nth-child(2) {
+  margin: 240px 0 0 0;
+}
+
+.about__cards .card:nth-child(3) {
+  margin: 5px 0 0 0;
+}
+
+@media (max-width: 1250px) {
+  /* .about__subtitle {
+    text-align: center;
+  } */
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  .about__cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .about__cards .card:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__content {
+    padding: 0 15px;
+  }
+  .about__title {
+    font-size: 35px;
+  }
+  .about__desc {
+    font-size: 16px;
+  }
+}
