@@ -41,6 +41,37 @@
     </div>
   </header>
 
+  <div class="mobile-navigation" aria-label="mobile navigation">
+    <label for="menu-toggler-id" aria-label="open-close mobile navigation menu">
+      <svg class="mobile-navigation__burger" aria-label="burger icon">
+        <use href="assets/sprites.svg#burger-icon"></use>
+      </svg>
+    </label>
+    <input type="checkbox" name="toggler" id="menu-toggler-id" class="mobile-navigation__toggler">
+    <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+      <ul class="mobile-navigation__list" aria-label="mobile navigation list">
+        <li class="mobile-navigation__item">
+          <a href="#about-id" class="mobile-navigation__link">Why Alivio</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a href="#success-id" class="mobile-navigation__link">Solutions</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a href="#product-id" class="mobile-navigation__link">Community</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a href="#pricing-id" class="mobile-navigation__link">Pricing</a>
+        </li>
+      </ul>
+
+      <label for="menu-toggler-id" class="mobile-navigation__close" aria-label="close mobile navigation menu">
+        <svg class="mobile-navigation__cross" aria-label="cross icon">
+          <use href="assets/sprites.svg#cross-icon"></use>
+        </svg>
+      </label>
+    </nav>
+  </div>
+
   <main>
 
     <section class="hero" aria-label="hero section" id="hero-id">
@@ -57,7 +88,7 @@
       <div class="container">
         <!-- <h3 class="about__subtitle">How it works</h3> -->
         <div class="about__content">
-          <h2 class="about__title">Understand &amp Release the stress in 3 steps</h2>
+          <h2 class="about__title">Understand &amp; Release the stress in 3 steps</h2>
           <p class="about__desc">Alivio offers as many journals it takes, tackling different are as such as anxiety, overwhelmedness, sadness or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</p>
         </div>
 
@@ -69,7 +100,7 @@
           </figure>
 
           <figure class="card" aria-label="second card">
-            <h3 class="card__title card__title--second card__title--right">Write &amp Understand</h3>
+            <h3 class="card__title card__title--second card__title--right">Write &amp; Understand</h3>
             <p class="card__desc" aria-label="first card description">Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</p>
             <img src="assets/webp/card_2.webp" alt="card image 2" class="card__img">
           </figure>

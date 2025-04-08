@@ -33,4 +33,5 @@
 .pricing__nav-link:hover {
   font-size: 27px;
   transition: color .30s;
+  transition-duration: 1.80s
 }
